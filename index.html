@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code Rooms</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Code Rooms</h1>
+    <p id="hud">Habitación <span id="sala">1</span> de <span id="total">3</span></p>
+  </header>
+  <canvas id="lienzo" width="800" height="450"></canvas>
+  <p class="ayuda">Mover: ← → o A D · Saltar: ↑, W o espacio · Abrir puerta: E</p>
+  <div id="modal" class="oculto">
+    <div class="caja">
+      <h2 id="m-titulo"></h2>
+      <pre id="m-texto"></pre>
+      <div id="m-cuerpo"></div>
+      <p id="m-msg"></p>
+      <button id="m-cerrar" type="button">Cerrar</button>
+    </div>
+  </div>
+</main>
+<script src="juego.js"></script>
+</body>
+</html>
